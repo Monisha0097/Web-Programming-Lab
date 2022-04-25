@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+    <input type="number" id="myInput">
+    <button type="button" onclick="getInputValue()">Answer</button>
+    <p id = "here"></p>
+    <script>
+       function getInputValue(){
+            var inputVal = document.getElementById("myInput").value;
+            if ( inputVal > 0)
+            {
+            document.getElementById("here").innerHTML=("This is a positive number");
+            }
+            else{
+                document.getElementById("here").innerHTML=("This is a negative number"); 
+            }
+       }
+    </script>
+
+</body>
+</html>
