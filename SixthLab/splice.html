@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="ratio">enter splitting ratio</label>
+    <input type="number" id="a">
+    <input type="button" value="Save" onclick="savedata()">
+    <div id="first_arr"></div><br>
+    <div id="second_arr"></div>
+    <script>
+        function savedata(){
+        var arr=[1,2,3,4,5]
+        alert(arr)
+        var a=document.getElementById('a').value;
+        var first_arr=arr.splice(0,a)
+        var second_arr=arr  
+        alert(first_arr)
+        alert(second_arr)}
+    </script>
+</body>
+</html>
